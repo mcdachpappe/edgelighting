@@ -47,7 +47,7 @@
 
 .field private final mSettingObserver:Lcom/oneplus/aod/OpAodDisplayViewManager$SettingObserver;
 
-.field private mSingleNotificationView:Lcom/oneplus/aod/OpSingleNotificationView;
+.field public mSingleNotificationView:Lcom/oneplus/aod/OpSingleNotificationView;
 
 .field private mSliceManager:Lcom/oneplus/aod/slice/OpSliceManager;
 
@@ -696,16 +696,20 @@
 
     if-ne v0, v4, :cond_7
 
-    iget-object p0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
+    iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
 
-    invoke-virtual {p0}, Lcom/oneplus/aod/OpAodLightEffectContainer;->showLight()V
+    invoke-virtual {v0}, Lcom/oneplus/aod/OpAodLightEffectContainer;->setEdgeToAppColor()V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
+
+    invoke-virtual {v0}, Lcom/oneplus/aod/OpAodLightEffectContainer;->showLight()V
 
     goto :goto_3
 
     :cond_7
-    iget-object p0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
+    iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
 
-    invoke-virtual {p0}, Lcom/oneplus/aod/OpAodLightEffectContainer;->resetNotificationAnimView()V
+    invoke-virtual {v0}, Lcom/oneplus/aod/OpAodLightEffectContainer;->resetNotificationAnimView()V
 
     :cond_8
     :goto_3
@@ -1057,3 +1061,4 @@
     :cond_8
     return-void
 .end method
+
