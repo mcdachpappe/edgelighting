@@ -1038,7 +1038,6 @@
     <style name="Keyguard.ImageButton.NumPadDelete" parent="@android:style/Widget.ImageButton">
         <item name="android:paddingBottom">11.0sp</item>
         <item name="android:src">@drawable/ic_backspace_black_24dp</item>
-        <item name="android:src">@drawable/ic_backspace_black_24dp</item>
         <item name="android:tint">@color/pin_delete_color</item>
         <item name="android:tintMode">src_in</item>
     </style>
@@ -3939,12 +3938,10 @@
     </style>
     <style name="TextAppearance.NotificationImportanceChannel" parent="@style/TextAppearance">
         <item name="android:textSize">@dimen/notification_importance_channel_text</item>
-        <item name="android:textSize">@dimen/notification_importance_channel_text</item>
         <item name="android:textColor">@color/notification_guts_header_text_color</item>
         <item name="android:fontFamily">@android:string/config_headlineFontFamilyMedium</item>
     </style>
     <style name="TextAppearance.NotificationImportanceChannelGroup" parent="@style/TextAppearance">
-        <item name="android:textSize">@dimen/notification_importance_channel_group_text</item>
         <item name="android:textSize">@dimen/notification_importance_channel_group_text</item>
         <item name="android:textColor">@color/notification_guts_sub_text_color</item>
         <item name="android:fontFamily">@android:string/config_headlineFontFamily</item>
