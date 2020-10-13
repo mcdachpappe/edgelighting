@@ -158,7 +158,7 @@ Name: META-INF/proguard/androidx-annotations.pro
 SHA-256-Digest: M/eLd9AzF+l12cP2AYORDIyrIrDy2h+TQrjFnXW8IP8=
 
 Name: classes.dex
-SHA-256-Digest: x4abdSsrMQSJD9NQepaA6jlPBPvXlQ/7IBnT4qFvGx0=
+SHA-256-Digest: 6SvLRWIUCFLQKaEv5jJ3sQM9OGTYWvAB5ZWJTdyMQMY=
 
 Name: kotlin/annotation/annotation.kotlin_builtins
 SHA-256-Digest: 98k+cGfKErqbPZTG5UDkwjy2/djJr/cEtVPKumUPw1c=
