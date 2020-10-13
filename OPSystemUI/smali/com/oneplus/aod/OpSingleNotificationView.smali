@@ -3,6 +3,10 @@
 .source "OpSingleNotificationView.java"
 
 
+# static fields
+.field public static mAppIconColor:I
+
+
 # instance fields
 .field private final TAG:Ljava/lang/String;
 
@@ -290,6 +294,8 @@
     invoke-static {v7, v8}, Lcom/android/internal/util/ContrastColorUtil;->changeColorLightness(II)I
 
     move-result v8
+
+    sput v8, Lcom/oneplus/aod/OpSingleNotificationView;->mAppIconColor:I
 
     :goto_1
     invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
