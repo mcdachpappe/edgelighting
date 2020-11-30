@@ -15,6 +15,8 @@
 
 
 # instance fields
+.field final autoHide:Landroid/os/Handler;
+
 .field private final mAmbientPulseManager:Lcom/android/systemui/statusbar/AmbientPulseManager;
 
 .field private mAodMainView:Lcom/oneplus/aod/OpAodMain;
@@ -69,6 +71,12 @@
     const/4 v0, 0x1
 
     iput v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mStatus:I
+
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+
+    iput-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->autoHide:Landroid/os/Handler;
 
     new-instance v0, Lcom/oneplus/aod/OpAodDisplayViewManager$SettingObserver;
 
@@ -699,6 +707,16 @@
     iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
 
     invoke-virtual {v0}, Lcom/oneplus/aod/OpAodLightEffectContainer;->setEdgeToAppColor()V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->autoHide:Landroid/os/Handler;
+
+    new-instance v1, Lcom/oneplus/aod/OpAodDisplayViewManager$AutoHide;
+
+    invoke-direct {v1, p0}, Lcom/oneplus/aod/OpAodDisplayViewManager$AutoHide;-><init>(Lcom/oneplus/aod/OpAodDisplayViewManager;)V
+
+    const-wide/16 v2, 0x157C
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
 

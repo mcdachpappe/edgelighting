@@ -124,7 +124,7 @@
     <integer name="op_design_snackbar_text_max_lines">2</integer>
     <integer name="op_doze_fingerprint_poke_pulse_duration_visible">3000</integer>
     <integer name="op_doze_pick_up_pulse_duration_visible">3000</integer>
-    <integer name="op_doze_pulse_duration_visible">5000</integer>
+    <integer name="op_doze_pulse_duration_visible">16000</integer>
     <integer name="op_doze_single_tap_pulse_duration_visible">3000</integer>
     <integer name="op_doze_three_key_pulse_duration_visible">3000</integer>
     <integer name="op_hide_password_duration">320</integer>
