@@ -398,6 +398,13 @@
     <dimen name="edit_text_inset_horizontal_material">4.0dip</dimen>
     <dimen name="edit_text_inset_top_material">10.0dip</dimen>
     <dimen name="emergency_button_margin_top">155.0px</dimen>
+    <dimen name="expand_button_arrow_height">56.0px</dimen>
+    <dimen name="expand_button_arrow_width">63.0px</dimen>
+    <dimen name="expand_button_height">63.0px</dimen>
+    <dimen name="expand_button_padding">42.0px</dimen>
+    <dimen name="expand_button_radius">36.0px</dimen>
+    <dimen name="expand_button_stroke">3.0px</dimen>
+    <dimen name="expand_button_width">105.0px</dimen>
     <dimen name="fab_elevation">12.0dip</dimen>
     <dimen name="fab_margin">16.0dip</dimen>
     <dimen name="fab_press_translation_z">9.0dip</dimen>
@@ -1289,6 +1296,8 @@
     <dimen name="op_emergency_panel_indicator_margin_top">329.0px</dimen>
     <dimen name="op_emergency_panel_indicator_padding">126.0px</dimen>
     <dimen name="op_front_camera_animation_front_camera_posistion">235.0px</dimen>
+    <dimen name="op_game_mode_toolbox_region_width_land">48.0dip</dimen>
+    <dimen name="op_game_mode_toolbox_region_width_port">48.0dip</dimen>
     <dimen name="op_global_actions_item_icon_size">60.0px</dimen>
     <dimen name="op_global_actions_item_min_size">230.0px</dimen>
     <dimen name="op_global_actions_item_side_padding">10.0px</dimen>

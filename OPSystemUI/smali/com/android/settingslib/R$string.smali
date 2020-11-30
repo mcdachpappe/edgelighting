@@ -64,108 +64,108 @@
 
 .field public static final disabled_by_admin_summary_text:I = 0x7f110266
 
-.field public static final enabled_by_admin:I = 0x7f110286
+.field public static final enabled_by_admin:I = 0x7f110287
 
-.field public static final failed_to_open_app_settings_toast:I = 0x7f11029d
+.field public static final failed_to_open_app_settings_toast:I = 0x7f11029e
 
-.field public static final ime_security_warning:I = 0x7f1102db
+.field public static final ime_security_warning:I = 0x7f1102dc
 
-.field public static final osu_completing_sign_up:I = 0x7f1104b3
+.field public static final osu_completing_sign_up:I = 0x7f1104b4
 
-.field public static final osu_connect_failed:I = 0x7f1104b4
+.field public static final osu_connect_failed:I = 0x7f1104b5
 
-.field public static final osu_opening_provider:I = 0x7f1104b5
+.field public static final osu_opening_provider:I = 0x7f1104b6
 
-.field public static final osu_sign_up_complete:I = 0x7f1104b6
+.field public static final osu_sign_up_complete:I = 0x7f1104b7
 
-.field public static final osu_sign_up_failed:I = 0x7f1104b7
+.field public static final osu_sign_up_failed:I = 0x7f1104b8
 
-.field public static final power_discharge_by:I = 0x7f1104e7
+.field public static final power_discharge_by:I = 0x7f1104e8
 
-.field public static final power_discharge_by_enhanced:I = 0x7f1104e8
+.field public static final power_discharge_by_enhanced:I = 0x7f1104e9
 
-.field public static final power_discharge_by_only:I = 0x7f1104e9
+.field public static final power_discharge_by_only:I = 0x7f1104ea
 
-.field public static final power_discharge_by_only_enhanced:I = 0x7f1104ea
+.field public static final power_discharge_by_only_enhanced:I = 0x7f1104eb
 
-.field public static final power_discharge_by_only_short:I = 0x7f1104eb
+.field public static final power_discharge_by_only_short:I = 0x7f1104ec
 
-.field public static final power_discharging_duration:I = 0x7f1104ec
+.field public static final power_discharging_duration:I = 0x7f1104ed
 
-.field public static final power_discharging_duration_enhanced:I = 0x7f1104ed
+.field public static final power_discharging_duration_enhanced:I = 0x7f1104ee
 
-.field public static final power_remaining_duration_only:I = 0x7f1104f0
+.field public static final power_remaining_duration_only:I = 0x7f1104f1
 
-.field public static final power_remaining_duration_only_enhanced:I = 0x7f1104f1
+.field public static final power_remaining_duration_only_enhanced:I = 0x7f1104f2
 
-.field public static final power_remaining_duration_only_short:I = 0x7f1104f2
+.field public static final power_remaining_duration_only_short:I = 0x7f1104f3
 
-.field public static final power_remaining_duration_only_shutdown_imminent:I = 0x7f1104f3
+.field public static final power_remaining_duration_only_shutdown_imminent:I = 0x7f1104f4
 
-.field public static final power_remaining_duration_shutdown_imminent:I = 0x7f1104f4
+.field public static final power_remaining_duration_shutdown_imminent:I = 0x7f1104f5
 
-.field public static final power_remaining_less_than_duration:I = 0x7f1104f5
+.field public static final power_remaining_less_than_duration:I = 0x7f1104f6
 
-.field public static final power_remaining_less_than_duration_only:I = 0x7f1104f6
+.field public static final power_remaining_less_than_duration_only:I = 0x7f1104f7
 
-.field public static final power_remaining_more_than_subtext:I = 0x7f1104f7
+.field public static final power_remaining_more_than_subtext:I = 0x7f1104f8
 
-.field public static final power_remaining_only_more_than_subtext:I = 0x7f1104f8
+.field public static final power_remaining_only_more_than_subtext:I = 0x7f1104f9
 
-.field public static final preference_summary_default_combination:I = 0x7f1104fc
+.field public static final preference_summary_default_combination:I = 0x7f1104fd
 
-.field public static final speed_label_fast:I = 0x7f110636
+.field public static final speed_label_fast:I = 0x7f110637
 
-.field public static final speed_label_okay:I = 0x7f110638
+.field public static final speed_label_okay:I = 0x7f110639
 
-.field public static final speed_label_slow:I = 0x7f110639
+.field public static final speed_label_slow:I = 0x7f11063a
 
-.field public static final speed_label_very_fast:I = 0x7f11063a
+.field public static final speed_label_very_fast:I = 0x7f11063b
 
-.field public static final tap_to_sign_up:I = 0x7f11066a
+.field public static final tap_to_sign_up:I = 0x7f11066b
 
-.field public static final wifi_ap_unable_to_handle_new_sta:I = 0x7f110724
+.field public static final wifi_ap_unable_to_handle_new_sta:I = 0x7f110725
 
-.field public static final wifi_auth_password_wrong:I = 0x7f110725
+.field public static final wifi_auth_password_wrong:I = 0x7f110726
 
-.field public static final wifi_check_password_try_again:I = 0x7f110729
+.field public static final wifi_check_password_try_again:I = 0x7f11072a
 
-.field public static final wifi_connected_no_internet:I = 0x7f11072a
+.field public static final wifi_connected_no_internet:I = 0x7f11072b
 
-.field public static final wifi_disabled_by_recommendation_provider:I = 0x7f11072d
+.field public static final wifi_disabled_by_recommendation_provider:I = 0x7f11072e
 
-.field public static final wifi_disabled_generic:I = 0x7f11072e
+.field public static final wifi_disabled_generic:I = 0x7f11072f
 
-.field public static final wifi_disabled_network_failure:I = 0x7f11072f
+.field public static final wifi_disabled_network_failure:I = 0x7f110730
 
-.field public static final wifi_disabled_password_failure:I = 0x7f110730
+.field public static final wifi_disabled_password_failure:I = 0x7f110731
 
-.field public static final wifi_disconnected:I = 0x7f110732
+.field public static final wifi_disconnected:I = 0x7f110733
 
-.field public static final wifi_fail_to_scan:I = 0x7f110737
+.field public static final wifi_fail_to_scan:I = 0x7f110738
 
-.field public static final wifi_limited_connection:I = 0x7f11073c
+.field public static final wifi_limited_connection:I = 0x7f11073d
 
-.field public static final wifi_metered_label:I = 0x7f11073d
+.field public static final wifi_metered_label:I = 0x7f11073e
 
-.field public static final wifi_no_internet:I = 0x7f11073f
+.field public static final wifi_no_internet:I = 0x7f110740
 
-.field public static final wifi_no_internet_no_reconnect:I = 0x7f110740
+.field public static final wifi_no_internet_no_reconnect:I = 0x7f110741
 
-.field public static final wifi_not_in_range:I = 0x7f110741
+.field public static final wifi_not_in_range:I = 0x7f110742
 
-.field public static final wifi_remembered:I = 0x7f110742
+.field public static final wifi_remembered:I = 0x7f110743
 
-.field public static final wifi_status_no_internet:I = 0x7f110768
+.field public static final wifi_status_no_internet:I = 0x7f110769
 
-.field public static final wifi_status_sign_in_required:I = 0x7f110769
+.field public static final wifi_status_sign_in_required:I = 0x7f11076a
 
-.field public static final wifi_unmetered_label:I = 0x7f11076a
+.field public static final wifi_unmetered_label:I = 0x7f11076b
 
-.field public static final zen_alarm_warning:I = 0x7f110777
+.field public static final zen_alarm_warning:I = 0x7f110778
 
-.field public static final zen_alarm_warning_indef:I = 0x7f110778
+.field public static final zen_alarm_warning_indef:I = 0x7f110779
 
-.field public static final zen_mode_enable_dialog_turn_on:I = 0x7f110780
+.field public static final zen_mode_enable_dialog_turn_on:I = 0x7f110781
 
-.field public static final zen_mode_settings_turn_on_dialog_title:I = 0x7f110783
+.field public static final zen_mode_settings_turn_on_dialog_title:I = 0x7f110784

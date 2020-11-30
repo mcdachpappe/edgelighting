@@ -547,6 +547,7 @@
     <item type="id" name="last_updated" />
     <item type="id" name="layer_disabled" />
     <item type="id" name="layout" />
+    <item type="id" name="layout_container" />
     <item type="id" name="layout_desc" />
     <item type="id" name="layout_title" />
     <item type="id" name="layout_wlb_indicators" />

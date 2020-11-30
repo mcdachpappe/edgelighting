@@ -4,10 +4,10 @@
 
 
 # static fields
-.field public static final mr_cast_checkbox:I = 0x7f080834
+.field public static final mr_cast_checkbox:I = 0x7f080836
 
-.field public static final mr_cast_mute_button:I = 0x7f080836
+.field public static final mr_cast_mute_button:I = 0x7f080838
 
-.field public static final mr_group_collapse:I = 0x7f08083e
+.field public static final mr_group_collapse:I = 0x7f080840
 
-.field public static final mr_group_expand:I = 0x7f08083f
+.field public static final mr_group_expand:I = 0x7f080841

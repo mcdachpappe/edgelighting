@@ -71,6 +71,8 @@
 
 .field private final mFingerOffset:I
 
+.field private mGameToolBoxRegionHeight:I
+
 .field private mGestureExclusionListener:Landroid/view/ISystemGestureExclusionListener;
 
 .field private final mImeChangedListener:Landroid/view/IPinnedStackListener$Stub;
@@ -554,15 +556,84 @@
 
     sput p1, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mCameraNotchHeight:I
 
+    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getDisplay()Landroid/view/Display;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_2
+
+    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mDisplay:Landroid/view/Display;
+
+    invoke-virtual {p1}, Landroid/view/Display;->getRotation()I
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const/4 p2, 0x2
+
+    if-ne p1, p2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    sget p2, Lcom/android/systemui/R$dimen;->op_game_mode_toolbox_region_width_land:I
+
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
+
+    iput p1, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mGameToolBoxRegionHeight:I
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    sget p2, Lcom/android/systemui/R$dimen;->op_game_mode_toolbox_region_width_port:I
+
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
+
+    iput p1, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mGameToolBoxRegionHeight:I
+
+    goto :goto_1
+
+    :cond_2
+    const/high16 p1, 0x42400000    # 48.0f
+
+    iget-object p2, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mContext:Landroid/content/Context;
+
+    invoke-static {p1, p2}, Lcom/android/systemui/assist/ui/DisplayUtils;->convertDpToPx(FLandroid/content/Context;)I
+
+    move-result p1
+
+    iput p1, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mGameToolBoxRegionHeight:I
+
+    :goto_1
     sget-boolean p1, Landroid/view/ViewRootImplInjector;->IS_SUPPORT_CAMERA_NOTCH:Z
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_3
 
     const/4 p1, 0x1
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mIsIgnoreCameraNotch:Z
 
-    :cond_0
+    :cond_3
     return-void
 .end method
 
@@ -750,6 +821,56 @@
     return-void
 .end method
 
+.method private gameToolboxEnable()Z
+    .locals 4
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const/4 v1, -0x2
+
+    const-string v2, "game_mode_status"
+
+    invoke-static {v0, v2, v1}, Landroid/provider/Settings$System;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p0
+
+    const/4 v2, 0x1
+
+    const-string v3, "game_toolbox_enable"
+
+    invoke-static {p0, v3, v2, v1}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+
+    move-result p0
+
+    const-string v1, "1"
+
+    invoke-static {v0, v1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    if-ne p0, v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    :goto_0
+    return v2
+.end method
+
 .method private getScreenHeight(I)I
     .locals 1
 
@@ -787,6 +908,30 @@
     :goto_1
     iget p0, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mScreenHeight:I
 
+    return p0
+.end method
+
+.method private isGameToolBoxRegion(I)Z
+    .locals 1
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->gameToolboxEnable()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget p0, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mGameToolBoxRegionHeight:I
+
+    if-ge p1, p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
     return p0
 .end method
 
@@ -917,7 +1062,7 @@
 
     sub-int/2addr v0, v3
 
-    if-gt p2, v0, :cond_c
+    if-gt p2, v0, :cond_d
 
     invoke-direct {p0, p2}, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->isYInTouchRegion(I)Z
 
@@ -947,13 +1092,22 @@
     return v2
 
     :cond_a
+    invoke-direct {p0, p2}, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->isGameToolBoxRegion(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_b
+
+    return v2
+
+    :cond_b
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mExcludeRegion:Landroid/graphics/Region;
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/Region;->contains(II)Z
 
     move-result p1
 
-    if-eqz p1, :cond_b
+    if-eqz p1, :cond_c
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->mOverviewProxyService:Lcom/android/systemui/recents/OverviewProxyService;
 
@@ -971,12 +1125,12 @@
 
     invoke-virtual/range {v2 .. v7}, Lcom/android/systemui/recents/OverviewProxyService;->notifyBackAction(ZIIZZ)V
 
-    :cond_b
+    :cond_c
     xor-int/lit8 p0, p1, 0x1
 
     return p0
 
-    :cond_c
+    :cond_d
     :goto_1
     return v2
 .end method

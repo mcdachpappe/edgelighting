@@ -12,8 +12,8 @@
 
 .field public static final digital_clock:I = 0x7f0d0051
 
-.field public static final keyguard_bouncer:I = 0x7f0d0079
+.field public static final keyguard_bouncer:I = 0x7f0d007a
 
-.field public static final keyguard_num_pad_key:I = 0x7f0d0081
+.field public static final keyguard_num_pad_key:I = 0x7f0d0082
 
-.field public static final keyguard_presentation:I = 0x7f0d0086
+.field public static final keyguard_presentation:I = 0x7f0d0087

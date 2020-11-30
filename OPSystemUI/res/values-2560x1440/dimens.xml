@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="expand_button_arrow_height">75.0px</dimen>
+    <dimen name="expand_button_arrow_width">84.0px</dimen>
+    <dimen name="expand_button_height">84.0px</dimen>
+    <dimen name="expand_button_padding">56.0px</dimen>
+    <dimen name="expand_button_radius">48.0px</dimen>
+    <dimen name="expand_button_stroke">4.0px</dimen>
+    <dimen name="expand_button_width">140.0px</dimen>
+</resources>

@@ -8,6 +8,6 @@
 
 .field public static final bubble_thumbnail:I = 0x7f0802e0
 
-.field public static final default_thumbnail:I = 0x7f080312
+.field public static final default_thumbnail:I = 0x7f080313
 
-.field public static final ripple_drawable:I = 0x7f08096b
+.field public static final ripple_drawable:I = 0x7f08096d

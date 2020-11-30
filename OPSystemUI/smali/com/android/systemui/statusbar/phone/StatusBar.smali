@@ -12900,6 +12900,12 @@
 
     invoke-virtual {p2, v0, v0, v1}, Lcom/android/systemui/statusbar/phone/PanelBar;->collapsePanel(ZZF)V
 
+    iget-object p2, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mStatusBarCollapseListener:Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$StatusBarCollapseListener;
+
+    if-eqz p2, :cond_2
+
+    invoke-interface {p2}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$StatusBarCollapseListener;->statusBarCollapse()V
+
     :cond_2
     const-class p2, Lcom/android/systemui/recents/OverviewProxyService;
 

@@ -311,7 +311,7 @@
 
     move-result-object v12
 
-    const/high16 v13, 0x8000000
+    const/high16 v13, 0xc000000
 
     const/4 v14, 0x0
 

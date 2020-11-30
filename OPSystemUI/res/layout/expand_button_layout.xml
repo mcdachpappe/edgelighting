@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_container" android:background="@drawable/button_shape_round_rect_bg" android:layout_width="wrap_content" android:layout_height="@dimen/expand_button_height" android:paddingStart="@dimen/expand_button_padding" android:paddingEnd="@dimen/expand_button_padding">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/expand_button" android:background="@drawable/ic_expand_button" android:layout_width="@dimen/expand_button_arrow_width" android:layout_height="@dimen/expand_button_arrow_height" />
+    </LinearLayout>
+</LinearLayout>

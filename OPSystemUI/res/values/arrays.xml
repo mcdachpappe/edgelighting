@@ -590,7 +590,7 @@
         <item>@color/oneplus_contorl_text_color_secondary_dark</item>
         <item>@color/oneplus_contorl_icon_color_active_dark</item>
         <item>#4dffffff</item>
-        <item>#ff000000</item>
+        <item>#ff121212</item>
         <item>@color/oneplus_contorl_bg_color_dialogs_dark</item>
         <item>@color/oneplus_contorl_icon_color_active_dark</item>
         <item>#3dffffff</item>
@@ -610,7 +610,7 @@
         <item>@color/oneplus_contorl_text_color_secondary_dark</item>
         <item>@color/oneplus_contorl_icon_color_active_dark</item>
         <item>#4dffffff</item>
-        <item>#ff000000</item>
+        <item>#ff121212</item>
         <item>@color/oneplus_contorl_bg_color_dialogs_dark</item>
         <item>@color/oneplus_contorl_icon_color_active_dark</item>
         <item>#3dffffff</item>

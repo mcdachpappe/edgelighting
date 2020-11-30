@@ -11,6 +11,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$StatusBarCollapseListener;,
         Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$OpDozeCallbacks;
     }
 .end annotation
@@ -94,6 +95,8 @@
 .field private mSpecialTheme:Z
 
 .field protected mStartDozingRequested:Z
+
+.field protected mStatusBarCollapseListener:Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$StatusBarCollapseListener;
 
 .field protected mTelecomManager:Landroid/telecom/TelecomManager;
 
@@ -1862,6 +1865,14 @@
     return v0
 .end method
 
+.method public getmStatusBarCollapseListener()Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$StatusBarCollapseListener;
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mStatusBarCollapseListener:Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$StatusBarCollapseListener;
+
+    return-object p0
+.end method
+
 .method protected inflateOPAodView(Landroid/content/Context;)V
     .locals 2
 
@@ -3603,6 +3614,14 @@
     invoke-virtual {p0}, Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView;->setUpHighlightHintInfo()V
 
     :cond_0
+    return-void
+.end method
+
+.method public setmStatusBarCollapseListener(Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$StatusBarCollapseListener;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mStatusBarCollapseListener:Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$StatusBarCollapseListener;
+
     return-void
 .end method
 

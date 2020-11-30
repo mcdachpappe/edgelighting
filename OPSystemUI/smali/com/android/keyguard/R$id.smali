@@ -78,36 +78,36 @@
 
 .field public static final klondike_text:I = 0x7f0a024f
 
-.field public static final lock_icon_container:I = 0x7f0a028d
+.field public static final lock_icon_container:I = 0x7f0a028e
 
-.field public static final lock_screen_clock:I = 0x7f0a028e
+.field public static final lock_screen_clock:I = 0x7f0a028f
 
-.field public static final logout:I = 0x7f0a0290
+.field public static final logout:I = 0x7f0a0291
 
-.field public static final minute_hand:I = 0x7f0a02b4
+.field public static final minute_hand:I = 0x7f0a02b5
 
-.field public static final owner_info:I = 0x7f0a0380
+.field public static final owner_info:I = 0x7f0a0381
 
-.field public static final passwordEntry:I = 0x7f0a0389
+.field public static final passwordEntry:I = 0x7f0a038a
 
-.field public static final pinEntry:I = 0x7f0a0391
+.field public static final pinEntry:I = 0x7f0a0392
 
-.field public static final pukEntry:I = 0x7f0a03be
+.field public static final pukEntry:I = 0x7f0a03bf
 
-.field public static final row0:I = 0x7f0a03f8
+.field public static final row0:I = 0x7f0a03f9
 
-.field public static final row1:I = 0x7f0a03f9
+.field public static final row1:I = 0x7f0a03fa
 
-.field public static final row2:I = 0x7f0a03fa
+.field public static final row2:I = 0x7f0a03fb
 
-.field public static final row3:I = 0x7f0a03fb
+.field public static final row3:I = 0x7f0a03fc
 
-.field public static final simPinEntry:I = 0x7f0a0459
+.field public static final simPinEntry:I = 0x7f0a045a
 
-.field public static final slot_id_name:I = 0x7f0a0468
+.field public static final slot_id_name:I = 0x7f0a0469
 
-.field public static final status_view_container:I = 0x7f0a0489
+.field public static final status_view_container:I = 0x7f0a048a
 
-.field public static final switch_ime_button:I = 0x7f0a0493
+.field public static final switch_ime_button:I = 0x7f0a0494
 
-.field public static final time:I = 0x7f0a04c3
+.field public static final time:I = 0x7f0a04c4
